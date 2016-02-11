@@ -10,11 +10,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_main);
         String[] arrMainActivityList = {"one","two","three"};
-        ArrayAdapter adapterMainActivity = new ArrayAdapter(this,R.layout.activity_main,arrMainActivityList);
+        ArrayAdapter adapterMainActivity = new ArrayAdapter(this,R.layout.main_listview,arrMainActivityList);
         ListView listView = (ListView) findViewById(R.id.main_activity_list);
         listView.setAdapter(adapterMainActivity);
-        setContentView(R.layout.activity_main);
+
     }
 }
